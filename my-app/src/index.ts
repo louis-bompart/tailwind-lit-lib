@@ -1,0 +1,1 @@
+import 'my-cmp-lib/components/my-component'

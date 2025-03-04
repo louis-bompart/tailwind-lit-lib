@@ -1,0 +1,20 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "npm run build -- --servedir=www",
+        "build": "esbuild src/index.ts --bundle --loader:.css=copy --outdir=www/js --format=esm --splitting --sourcemap"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "my-cmp-lib": "1.0.0"
+    },
+    "devDependencies": {
+        "esbuild": "0.25.0"
+    }
+}

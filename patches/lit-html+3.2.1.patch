@@ -1,0 +1,13 @@
+diff --git a/node_modules/lit-html/development/lit-html.d.ts b/node_modules/lit-html/development/lit-html.d.ts
+index 6148574..95e42fa 100644
+--- a/node_modules/lit-html/development/lit-html.d.ts
++++ b/node_modules/lit-html/development/lit-html.d.ts
+@@ -4,7 +4,7 @@
+  * SPDX-License-Identifier: BSD-3-Clause
+  */
+ import type { Directive } from './directive.js';
+-import type { TrustedHTML } from 'trusted-types/lib';
++import type { TrustedHTML } from 'trusted-types/lib/index.d.ts';
+ /**
+  * Contains types that are part of the unstable debug API.
+  *

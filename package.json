@@ -1,0 +1,21 @@
+{
+  "name": "lit-tailwind-again",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build -w=my-cmp-lib && npm start -w=my-app",
+    "build": "npm run build -w=my-cmp-lib && npm build -w=my-app",
+    "postinstall": "patch-package"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "workspaces": [
+    "my-cmp-lib",
+    "my-app"
+  ],
+  "devDependencies": {
+    "patch-package": "^8.0.0"
+  }
+}
